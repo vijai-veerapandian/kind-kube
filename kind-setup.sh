@@ -14,7 +14,7 @@ echo " "
 echo "Alright,done, here is some quick commands to start with easier"
 echo " "
 echo "kind create cluster --name local-kind"
-echo "kind get cluster"
+echo "kind get clusters"
 echo "kind delete cluster --name local-kind"
 
 echo " "
