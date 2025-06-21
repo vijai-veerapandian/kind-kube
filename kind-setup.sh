@@ -14,7 +14,7 @@ echo " "
 echo "Alright,done, here is some quick commands to start with easier"
 echo " "
 echo "kind create cluster --name local-kind"
-echo "king get cluster"
+echo "king get clusters"
 echo "docker exec -it kind-control-plane bash"
 echo "kubectl get nodes"
 echo "kubectl version"
@@ -23,4 +23,4 @@ echo "If want to implement auto-completion cmd. check the script, Have a nice da
 # echo 'source <(kubectl completion bash)' >> ~/.bashrc
 # echo 'source /usr/share/bash-completion/bash_completion' >> ~/.bashrc
 # source ~/.bashrc
-echo "some good reference to start: https://youtube.com/watch?v=kkW7LNCsK74&ab_channel=JustmeandOpensource"
+echo "some good reference to start with: https://youtube.com/watch?v=kkW7LNCsK74&ab_channel=JustmeandOpensource"
