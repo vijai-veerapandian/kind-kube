@@ -12,6 +12,7 @@ sudo mv kind-linux-amd64 /usr/local/bin/kind
 
 echo " "
 echo "Alright,done, here is some quick commands to start with easier"
+echo " "
 echo "kind create cluster --name local-kind"
 echo "king get cluster"
 echo "docker exec -it kind-control-plane bash"
