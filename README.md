@@ -25,13 +25,18 @@ kind create cluster --config kind-config-cilium.yaml
 docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' kind-man-control-plane
 
 helm repo add cilium https://helm.cilium.io/
-helm repo update -y
+helm repo update
 
 helm install cilium cilium/cilium --version 1.15.5 \
    --namespace kube-system \
    --set kubeProxyReplacement=strict \
    --set k8sServiceHost=172.18.0.3
    --set k8sServicePort=6443
+
+also, add if wanted
+   --set hubble.relay.enabled=true
+   --set hubble.ui.enabled=true
+
 
 kubectl wait --for=condition=ready --timeout=5m -n kube-system pod -l k8s-app=cilium
 
