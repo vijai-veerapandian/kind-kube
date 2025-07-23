@@ -10,14 +10,18 @@ Following script will quickly install Kind on Ubuntu machine and steps are prett
 Quick Reference cmds once done with the Kind Installation:
 
 ```
-$docker exec -it kind-control-plane bash
+$docker exec -it kind-control-plane bash ( optional)
 $kind create cluster --name local-kind
 $kind get clusters
 ```
+![Kind](./assets/kindshot1.png)
+
 ```
 $kubectl get nodes
 $kubectl version
 ```
+![Kind](./assets/kindshot2.png)
+
 Finally, Delete the created cluster:
 ```
 $kind delete cluster --name local-kind
