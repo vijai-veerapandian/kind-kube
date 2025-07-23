@@ -1,7 +1,7 @@
 # kind local setup
 To fast CICD testing and container applicaiton kubernetes compatible check during developement before deploying on Entireprise or Production Grade K8s cluster.
 
-Following script will quickly install Kind on Ubuntu machine and its pretty much the same if you're using brew on Arch Linux
+Following script will quickly install Kind on Ubuntu machine and steps are pretty much the same if you're using brew on Arch Linux
 
 ```
 ./kind-setup.sh
