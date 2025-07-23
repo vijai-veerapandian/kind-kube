@@ -7,11 +7,9 @@ Following script will quickly install Kind on Ubuntu machine and its pretty much
 ./kind-setup.sh
 ```
 
-
 Quick Reference cmds once done with the Kind Installation:
 
-
-``
+```
 $docker exec -it kind-control-plane bash
 $kind create cluster --name local-kind
 $kind get clusters
@@ -25,14 +23,17 @@ Finally, Delete the created cluster:
 $kind delete cluster --name local-kind
 ```
 Stop the Kind
+
 ```
 $sudo systemctl stop kind
 ```
+
 ## Install Cilium on Kind Cluster
 
 ```
 kind create cluster --config kind-config-cilium.yaml
 ```
+
 ```
 docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' kind-man-control-plane
 ```
