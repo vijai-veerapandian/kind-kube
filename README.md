@@ -1,5 +1,5 @@
 # kind local setup
-To fast CICD testing and container applicaiton kubernetes compatible check during developement before deploying on Entireprise or Production Grade K8s cluster.
+To perform quick CICD testing and container application deployment testing on kubernetes during developement phase before deploying on Production/staging environment.
 
 Following script will quickly install Kind on Ubuntu machine and steps are pretty much the same if you're using brew on Arch Linux
 
@@ -67,3 +67,30 @@ kubectl wait --for=condition=ready --timeout=5m -n kube-system pod -l k8s-app=ci
 kubectl apply -f cilium-l2-pool.yaml
 ```
 
+#### How to uninstall kind cluster
+
+If kind cluster is not deleted before
+
+```
+kind delete cluster
+```
+
+and remove the kind binary
+
+```
+sudo rm /usr/local/bin/kind
+```
+#### Uninstall, Kubectl 
+
+```
+sudo rm /usr/local/bin/kubectl
+```
+if kubectl installed via apt-get in ubuntu then,
+
+```
+sudo apt-get purge kubectl 
+
+sudo apt-get remove
+
+rm -rf ~/.kube
+```
