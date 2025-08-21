@@ -32,6 +32,27 @@ Stop the Kind
 $sudo systemctl stop kind
 ```
 
+## Install Helm on Kind Cluster
+
+```
+curl -fsSL https://get.helm.sh/helm-v3.15.2-linux-amd64.tar.gz -o helm.tar.gz
+tar -zxvf helm.tar.gz
+sudo mv linux-amd64/helm /usr/local/bin/helm
+rm -rf linux-amd64 helm.tar.gz
+```
+More details: https://helm.sh/docs/intro/install/
+
+## Uninstall Helm 
+
+```
+helm list --all-namespace
+helm uninstall RELEASE_NAME --namespace namespace
+
+sudo rm /usr/local/bin/helm 
+
+rm -rf ~/.cache/helm ~/.config/helm ~/.local/share/bin
+```
+
 ## Install Cilium on Kind Cluster
 
 ```
