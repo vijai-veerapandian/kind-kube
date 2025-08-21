@@ -1,7 +1,7 @@
 # kind local setup
 To perform quick CICD testing and container application deployment testing on kubernetes during developement phase before deploying on Production/staging environment.
 
-Following script will quickly install Kind on Ubuntu machine and steps are pretty much the same if you're using brew on Arch Linux
+Following script will quickly install Kind on Ubuntu machine and steps are pretty much the same if you're using brew package on any linux distribution.
 
 ```
 ./kind-setup.sh
