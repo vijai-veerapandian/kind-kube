@@ -88,7 +88,7 @@ kubectl wait --for=condition=ready --timeout=5m -n kube-system pod -l k8s-app=ci
 kubectl apply -f cilium-l2-pool.yaml
 ```
 
-#### How to uninstall kind cluster
+## How to uninstall kind cluster
 
 If kind cluster is not deleted before, then
 
