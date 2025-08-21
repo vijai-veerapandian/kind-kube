@@ -69,7 +69,7 @@ kubectl apply -f cilium-l2-pool.yaml
 
 #### How to uninstall kind cluster
 
-If kind cluster is not deleted before
+If kind cluster is not deleted before, then
 
 ```
 kind delete cluster
